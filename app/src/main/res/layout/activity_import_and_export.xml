@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+
+    tools:ignore="MissingConstraints">
+
+
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:drawableStart="@drawable/ic_back"
+        android:paddingStart="5dp"
+        android:paddingEnd="8dp"
+        android:text="Back"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/import_export_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Import And Export"
+        android:textSize="18dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/import_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/box"
+        tools:ignore="MissingConstraints">
+
+<Button
+    android:id="@+id/import_btn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/box"
+    android:drawableStart="@drawable/baseline_add_24"
+    android:text="  IMPORT"
+    android:textColor="@android:color/black"
+    android:textSize="17sp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="12dp"
+android:padding="12dp"
+android:gravity="center"
+/>
+
+<TextView
+    android:id="@+id/import_btm_txt2"
+    android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:text="Import contact from file storage"
+android:textSize="18dp"
+android:layout_marginTop="12dp"
+    android:layout_marginBottom="20dp"
+/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/export_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/import_layout"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/export_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/box"
+            android:drawableStart="@drawable/file_export"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="  EXPORT"
+            android:textColor="@android:color/black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/export_btm_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="Export contact from file storage"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
